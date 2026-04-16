@@ -1,0 +1,85 @@
+.header {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; 
+  padding: 10px 30px;
+}
+
+.LogoTarongens img {
+  height: 50px;
+  width: auto;
+  display: block;
+}
+
+.nav {
+  gap: 60px; 
+  display: flex;          
+  align-items: center;    
+}
+
+.nav a {
+  margin-left: 5px;
+  text-decoration: none;
+  color: black;
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.NaranjaText {
+  display: flex;
+  justify-content: center; 
+  margin-top: 50px; 
+}
+
+.NaranjaText img {
+  max-width: 100%;   
+  height: auto;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: linear-gradient(
+    to bottom,
+    #ffffff 0%,
+    #ffffff 24%,
+    #FDECE8 40%,
+    #F5B3A3 60%,
+    #EC6746 90%,
+    #E74218 100%
+  );
+}
+
+.quiensomos {
+  padding: 60px 40px;
+}
+
+.quiensomos-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+.lineadivisora {
+  width: 1px;
+  height: 450px; 
+  background-color: white;
+}
+
+.quiensomos-title {
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;   
+  font-size: 128px;   
+  color: white;
+  margin: 0;
+}
+
+.quiensomos-text {
+  font-family: 'Inter', sans-serif;
+  font-size: 18px;
+  color: white;
+  max-width: 500px;
+  line-height: 1.6;
+}
