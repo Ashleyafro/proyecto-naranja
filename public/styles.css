@@ -60,12 +60,13 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 40px;
+  gap: 170px;
 }
 .lineadivisora {
   width: 1px;
-  height: 450px; 
   background-color: white;
+  align-self: stretch;
+  margin-left: -20px;
 }
 
 .quiensomos-title {
@@ -82,4 +83,5 @@ body {
   color: white;
   max-width: 500px;
   line-height: 1.6;
+  margin-left: -60px;
 }
