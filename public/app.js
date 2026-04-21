@@ -7,6 +7,14 @@ let variables = {};
 // run on page load
 window.onload = displayAPI;
 
+const btn = document.querySelector(".saber-btn");
+
+btn.addEventListener("click", () => {
+  document.getElementById("metodologia").scrollIntoView({
+    behavior: "smooth"
+  });
+});
+
 // tools
 const num = v => Number(v) || 0; // safe number conversion
 const avg = arr => arr.length ? arr.reduce((a,b)=>a+b,0)/arr.length : 0;

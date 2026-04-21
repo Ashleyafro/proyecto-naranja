@@ -51,9 +51,9 @@ body {
     to bottom,
     #ffffff 0%,
     #FDECE8 35%,
-    #F5B3A3 60%,
-    #EC6746 85%,
-    #F5B3A3 90%,
+    #F5B3A3 50%,
+    #EC6746 70%,
+    #F5B3A3 80%,
     #FDECE8 95%,
     #ffffff 100%
   );
@@ -123,4 +123,26 @@ body {
   background-color: #F5B3A3; 
   margin-top: 100px;
   margin: 100px auto;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.draftGrafica img {
+  max-width: 50%;   
+  height: auto;
+  margin: 0 auto;
+  margin-left: 250px; 
+}
+
+#metodologia {
+  font-family: 'Inter', sans-serif;
+  font-size: 20px;
+  color: black;
+  max-width: 800px;
+  line-height: 1.6;
+  margin: 0 auto;
+  text-align: left;      
+  padding: 0 20px;
 }
