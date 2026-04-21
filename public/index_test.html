@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Air Quality Dashboard</title>
+
+  <!-- Chart.js -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+  <style>
+    body {
+      font-family: Arial;
+      padding: 20px;
+    }
+
+    canvas {
+      display: block;
+      margin: 30px 0;
+      max-width: 600px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h1>Valencia Air Quality Dashboard</h1>
+
+  <h2>Pollution Over Time</h2>
+  <canvas id="lineChart"></canvas>
+
+  <h2>Average conditions for this month</h2>
+  <canvas id="tempChart"></canvas>
+  <canvas id="humChart"></canvas>
+  <canvas id="precChart"></canvas>
+  <canvas id="windChart"></canvas>
+
+  <script src="app.js"></script>
+
+</body>
+</html>
