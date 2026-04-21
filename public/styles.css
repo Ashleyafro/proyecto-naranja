@@ -56,6 +56,10 @@ body {
   padding: 60px 40px;
 }
 
+.quiensomos {
+  padding: 60px 40px;
+}
+
 .quiensomos-container {
   display: flex;
   align-items: center;
@@ -66,7 +70,7 @@ body {
   width: 1px;
   background-color: white;
   align-self: stretch;
-  margin-left: -20px;
+  margin-left: -100px;
 }
 
 .quiensomos-title {
@@ -84,4 +88,27 @@ body {
   max-width: 500px;
   line-height: 1.6;
   margin-left: -60px;
+  display: flex;
+  flex-direction: column;
 }
+
+.saber-btn {
+  margin-top: 20px;
+  padding: 12px 30px;
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+
+  background-color: white;
+  color: #E74218; 
+
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.saber-btn:hover {
+  background-color: #f36c4bf6;
+  color: white;
+} 
