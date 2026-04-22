@@ -5,15 +5,7 @@ const API_URL = "https://opendata.vlci.valencia.es/api/3/action/datastore_search
 let variables = {};
 
 // run on page load
-window.onload = displayAPI;
-
-const btn = document.querySelector(".saber-btn");
-
-btn.addEventListener("click", () => {
-  document.getElementById("metodologia").scrollIntoView({
-    behavior: "smooth"
-  });
-});
+document.addEventListener("DOMContentLoaded", displayAPI);
 
 // tools
 const num = v => Number(v) || 0; // safe number conversion
@@ -157,3 +149,11 @@ function createGauge(ctx, value, maxValue, label){
     }
   });
 }
+
+const btn = document.querySelector(".saber-btn");
+
+btn.addEventListener("click", () => {
+  document.getElementById("metodologia").scrollIntoView({
+    behavior: "smooth"
+  });
+});
