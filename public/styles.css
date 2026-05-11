@@ -50,8 +50,8 @@ body {
   background: linear-gradient(
     to bottom,
     #ffffff 0%,
-    #FDECE8 35%,
-    #F5B3A3 50%,
+    #FDECE8 8%,
+    #F5B3A3 30%,
     #EC6746 70%,
     #F5B3A3 80%,
     #FDECE8 95%,
@@ -61,7 +61,8 @@ body {
 
 .quiensomos {
   padding: 10px 40px;  
-  margin-top: -100px;
+  margin-top: 150px;
+  margin-left: 80px; 
 }
 
 .quiensomos-container {
@@ -129,20 +130,164 @@ html {
   scroll-behavior: smooth;
 }
 
-.draftGrafica img {
-  max-width: 50%;   
-  height: auto;
+.tablaNaranjas {
+  width: 88%;
+  margin: 50px auto;
+  background: #fffdf8;
+  border-radius: 18px;
+  overflow: hidden;
+  border: 1px solid #e8d8c9;
+  box-shadow: 0 10px 30px rgba(90, 50, 20, 0.08);
+  border-collapse: collapse;
+}
+
+.tablaNaranjas th {
+  background: #EC6746;
+  color: white;
+  padding: 18px 22px;
+  text-align: left;
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 15px;
+  letter-spacing: 0.3px;
+  text-transform: uppercase;
+}
+
+.tablaNaranjas td {
+  padding: 18px 22px;
+  font-family: 'Inter', sans-serif;
+  font-size: 15px;
+  color: #4a2c17;
+  line-height: 1.5;
+}
+
+.tablaNaranjas tbody tr {
+  border-bottom: 1px solid #f1e5da;
+  transition: background-color 0.25s ease;
+}
+
+.tablaNaranjas tbody tr:last-child {
+  border-bottom: none;
+}
+
+.tablaNaranjas tbody tr:nth-child(even) {
+  background: #fff8f2;
+}
+
+.tablaNaranjas tbody tr:hover {
+  background: #fff1e5;
+}
+
+.tablaNaranjas tbody tr:hover td {
+  color: #8E3A1F;
+}
+.TiposNaranja-title {
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 48px;
+  color: #ffffff;
+  margin-left: 80px;
+  margin-bottom: 20px;
+}
+
+.TiposNaranja {
+  margin-top: 300px;
+  position: relative;
+}
+
+.TiposNaranja::after { 
+content: ""; 
+position: absolute; 
+right: -10px; 
+top: 100%; 
+transform: translateY(-50%) rotate(15deg); 
+width: 200px; 
+height: 200px; 
+background: url("images/naranjaTabla.png") no-repeat center/contain;
+}
+
+.graficas {
+  width: 100vw;
+  min-height: 100vh;
+  padding: 80px 0;
+  background: #fbe7d6;
+  margin: 0;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  margin-top: 120px;
+}
+
+.graficas-container {
+  max-width: 1200px;
   margin: 0 auto;
-  margin-left: 250px; 
+}
+
+.graficas-header h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 52px;
+  font-weight: 700;
+  color: #4A2C17;
+  margin-bottom: 12px;
+  text-align: left;
+}
+
+.graficas-header p {
+  font-family: 'Inter', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  color: #8E5B3A;
+  text-align: left;
+  line-height: 1.6;
+  margin-bottom: 50px;
+}
+
+.line-card {
+  background: white;
+  border-radius: 24px;
+  padding: 30px;
+  height: 500px;
+  box-shadow: 0 20px 50px rgba(0,0,0,0.08);
+}
+
+.gauge-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.chart-card {
+  background: transparent;
+  border-radius: 24px;
+  padding: 25px;
+  height: 280px;
+  box-shadow: none;
+}
+
+.chart-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 24px 50px rgba(211, 84, 0, 0.18);
+}
+
+.line-card canvas,
+.chart-card canvas {
+  width: 100% !important;
+  height: 100% !important;
+  border-radius: 24px;
+  overflow: hidden;
 }
 
 #metodologia {
   font-family: 'Inter', sans-serif;
-  font-size: 20px;
-  color: black;
-  max-width: 800px;
-  line-height: 1.6;
+  font-size: 18px;
+  font-weight: 400;
+  color: #4A2C17;
+  max-width: 850px;
+  line-height: 1.8;
   margin: 0 auto;
-  text-align: left;      
+  text-align: left;
   padding: 0 20px;
 }
